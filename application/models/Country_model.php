@@ -46,6 +46,7 @@
 	  function update($id, $data)
 	  {
 		$this->db->update($this->table_name, $data);
+		$this->db->where(array('id'=>$id));
         if($this->db->affected_rows())
         {
             return true;

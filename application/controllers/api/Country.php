@@ -119,15 +119,15 @@
       function update_put($id)
       {
         
-         $this->input_stream('name', TRUE);
-         $this->input_stream('continent', TRUE);
+         $this->put('name');
+         $this->put('continent');
         
          //this checks if there are any validation errors
         
              //array of data to be inserted into the database: array('database_field'=>'form_field_value')
              $data=array(
-             'name'=>$this->input_stream('name', TRUE),
-             'continent'=>$this->input_stream('continent', TRUE)
+             'name'=>$this->put('name', TRUE),
+             'continent'=>$this->put('continent', TRUE)
              );
              $success=$this->Country_model->update($id,$data);
              // check if record updated successfully
