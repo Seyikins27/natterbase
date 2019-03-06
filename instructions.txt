@@ -1,0 +1,42 @@
+This is a description of how to use the natter_base API
+
+**POST /signup allows users to sign up, it requires the following*********
+firstname
+lastname
+dob
+email
+username
+password
+confpass
+
+returns a successful or failed message
+**********************************************
+
+**POST /login allows users to login, it requires the following*********
+username or email
+password
+
+it returns the login status with jwt token
+
+***********************************************************************
+
+**POST /countries allows users to add countries and their continents**
+name
+continent
+**********************************************************************
+
+
+**GET /countries allows users to get all countries and their continents**
+
+
+**GET /countries/:id allows users to get a country by the id**
+
+**PUT /countries/:id allows users to update countries by the id**
+
+**DELETE /countries/:id/delete allows users to delete countries by the id**
+
+**GET /activities/:page allows users view all their activities by page the limit is 10 records per page**
+
+
+
+
